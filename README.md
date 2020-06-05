@@ -20,6 +20,7 @@ To import the Classifier file write -
 
 For training the dataset use the **.fit** function and similarly for testing use the **.predict** function.
 > eod.fit(X_train, y_train)
+
 > eod.predict(X_test)
 
 
