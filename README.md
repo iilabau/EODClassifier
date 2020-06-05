@@ -7,6 +7,7 @@ NumPy, Pandas and sklearn (for metrics and performance analysis)
 
 ## Installation
 To use the classifier you are simply required to dowload the **patana.py** file.
+
 Keep this file in the same working directory where your program is running in.
 
 ## Usage
