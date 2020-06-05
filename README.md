@@ -2,35 +2,27 @@
 A binary classifier based on ensemble of decision of individual features.
 
 ## Pre-requisites 
-To use our EOD classifier few libraries/modules needs to be pre-installed those are -
-NumPy, Pandas and sklearn(for metrics and performance analysis)
+To use this EODclassifier few libraries/modules need to be pre-installed such as -
+NumPy, Pandas and sklearn (for metrics and performance analysis)
 
-## Installing
-To use the classifier you are simply required to dowload the **patana.py** file on the same location as the program it is being used on.
+## Installation
+To use the classifier you are simply required to dowload the **patana.py** file on the same location as the program it is being used in.
 
 ## Usage
 To import the Classifier file write -
 > from patana import EODClassifier
 
+To create object of EODClassifier class -
+> eod = EODClassifier()
+
+To import the Classifier file write -
+> from patana import EODClassifier
+
 For training the dataset use the **.fit** function and similarly for testing use the **.predict** function.
-For more information about how to use the module see the code below for better understanding.
-```
-from sklearn import datasets
-from patana import EODClassifier
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
+> eod.fit(X_train, y_train)
+> eod.predict(X_test)
 
-dataset = datasets.load_breast_cancer()
-X = dataset.data
-y = dataset.target
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-eod = EODClassifier()
-eod.fit(X_train,y_train)
-y_pred = eod.predict(X_test)   
-
-print(accuracy_score(y_test,y_pred)) 
-```
 ### Parameters
 There are two parameters available on our Classifier **Degree(p)** and **nof(Number of feautures)**. To use the Parameter put your desired value of degree and/or nof.
 For Example:
