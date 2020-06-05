@@ -13,8 +13,24 @@ To import the Classifier file write -
 > from patana import EODClassifier
 
 For training the dataset use the **.fit** function and similarly for testing use the **.predict** function.
-For more information about how to use the module see the **usage.py** file for more clear understanding.
+For more information about how to use the module see the code below for better understanding.
+''' 
+from sklearn import datasets
+from patana import EODClassifier
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 
+dataset = datasets.load_breast_cancer()
+X = dataset.data
+y = dataset.target
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+eod = EODClassifier()
+eod.fit(X_train,y_train)
+y_pred = eod.predict(X_test)   
+
+print(accuracy_score(y_test,y_pred))
+'''
 ### Parameters
 There are two parameters available on our Classifier **Degree(p)** and **nof(Number of feautures)**. To use the Parameter put your desired value of degree and/or nof.
 For Example:
