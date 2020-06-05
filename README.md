@@ -24,7 +24,10 @@ For training the dataset use the **.fit** function and similarly for testing use
 
 
 ### Parameters
-There are two parameters available in this classifier i.e. **p(degree)** and **nof(number of feautures)**. To use these parameters put your desired values of degree and/or nof.
+There are two parameters available in this classifier i.e. **p(degree)** and **nof(number of feautures)**.
+
+To use these parameters put your desired values of degree and/or nof.
+
 For Example:
 > eod = EODClassifier(p=2, nof=5)
 
