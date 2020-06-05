@@ -3,6 +3,7 @@ A binary classifier based on ensemble of decision of individual features.
 
 ## Pre-requisites 
 To use this EODclassifier few libraries/modules need to be pre-installed such as -
+
 NumPy, Pandas and sklearn (for metrics and performance analysis)
 
 ## Installation
@@ -33,8 +34,9 @@ For Example:
 
 By default, **p=1** and **nof='all'** which means it takes all the features for training and prediction. You can also use **nof='half'** to take top 50% features. Also, you can mention how many features you want and it will take that many features with the highest fitness values.
 
-## Sample code snippet 
-A ready to run code snippet for beginner's / quick understanding.
+## Sample Code Snippet 
+A ready-to-run code snippet for beginners / quicker understanding.
+
 ```
 from sklearn import datasets
 from patana import EODClassifier
@@ -54,6 +56,9 @@ print(accuracy_score(y_test,y_pred))
 ```
 
 ## How to Contribute
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
-Please make sure to update tests as appropriate.
+## Contact Information
+Sk Rohit Hasan - imrohithas@gmail.com
+
+Dr. A. F. Mollah - afmollah@aliah.ac.in
