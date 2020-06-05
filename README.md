@@ -6,7 +6,8 @@ To use this EODclassifier few libraries/modules need to be pre-installed such as
 NumPy, Pandas and sklearn (for metrics and performance analysis)
 
 ## Installation
-To use the classifier you are simply required to dowload the **patana.py** file on the same location as the program it is being used in.
+To use the classifier you are simply required to dowload the **patana.py** file.
+Keep this file in the same working directory where your program is running in.
 
 ## Usage
 To import the Classifier file write -
