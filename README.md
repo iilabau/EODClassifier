@@ -29,7 +29,7 @@ eod = EODClassifier()
 eod.fit(X_train,y_train)
 y_pred = eod.predict(X_test)   
 
-print(accuracy_score(y_test,y_pred))
+print(accuracy_score(y_test,y_pred)) 
 ```
 ### Parameters
 There are two parameters available on our Classifier **Degree(p)** and **nof(Number of feautures)**. To use the Parameter put your desired value of degree and/or nof.
