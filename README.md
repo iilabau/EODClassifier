@@ -55,6 +55,12 @@ y_pred = eod.predict(X_test)
 print(accuracy_score(y_test,y_pred)) 
 ```
 
+### Relevant Paper
+The following paper may be cited while referring to this classifier.
+```
+S. R. Hasan and A. F. Mollah, “An ensemble approach to feature selection and pattern classification”, Proceedings of International Conference on Contemporary Issues on Engineering and Technology (CIET-21), pp. 72-76, ISBN 978-81-949869-0-4, Jan 8-9, 2021. 
+```
+
 ### How to Contribute
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
